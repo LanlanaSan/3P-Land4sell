@@ -1,0 +1,18 @@
+section {
+    float: left;
+    margin: 0 3%;
+    width: 56%;
+    background-color: #323637;
+    padding-bottom: 200px;
+}
+
+aside {
+    float: right;
+    margin-right: 180px;
+    width: 28%;
+    background-color: aqua;
+}
+
+.maincontent {
+    padding-top: 120px;
+}

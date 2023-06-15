@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Signika:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<script type="module" src="Javascript/index.js"></script>
+
+<body>
+
+    <!-- Start of main content -->
+    <div class="split left">
+        <div class="form_container">
+            <div id="form_header_container">
+                <h1 id="form_header"> สร้างบัญชีของคุณ </h1>
+            </div>
+
+            <div class="alt_box">
+                <div class="alt_login">
+                    <a class="login_choice1" href="">
+                        <img src="media/floog.png" class="flogo">
+                        <div class="alt_txt">ล็อกอินด้วยfacebook</div>
+                    </a>
+                    <div class="line2"></div>
+                    <a class="login_choice2" href="">
+                        <img src="media/google.png" class="flogo">
+                        <div class="alt_txt">ล็อกอินด้วยบัญชีgoogle</div>
+                    </a>
+                </div>
+
+                <div class="or-1"></div>
+            </div>
+
+            <div class="main_form">
+                <form action="#">
+                    <!-- Start of name box -->
+                    <div class="form_content_container">
+
+                        <div class="top_container_name">
+                            <span class="texthead">ชื่อ</span>
+                            <span>&nbsp;</span>
+                            <span class="red">*</span>
+                        </div>
+
+                        <div class="top_container_box">
+                            <input type="text" id="full_name" placeholder="กรุณาพิมพ์ชื่อของคุณ">
+                        </div>
+                    </div>
+                    <!-- End of name box -->
+
+                    <!-- Start of email box -->
+                    <div class="form_content_container">
+                        <div class="top_container_name">
+                            <span class="texthead">อีเมล์</span>
+                            <span>&nbsp;</span>
+                            <span class="red">*</span>
+                        </div>
+
+                        <div class="top_container_box">
+                            <input type="email" id="email" placeholder="กรุณาพิมพ์อีเมล์ของคุณ">
+                        </div>
+                    </div>
+                    <!-- End of email box -->
+
+                    <!-- Start of password box -->
+                    <div class="form_content_container">
+                        <div class="top_container_name">
+                            <span class="texthead">รหัสผ่าน</span>
+                            <span>&nbsp;</span>
+                            <span class="red">*</span>
+                        </div>
+
+                        <div class="top_container_box">
+                            <input type="password" id="password" placeholder="กรุณาพิมพ์รหัสผ่านของคุณ">
+                        </div>
+
+                        <div class="terms">
+                            <label class="container">
+                                <input type="checkbox" checked="checked" class="cbox">
+                                ฉันยอมรับข้อตกลง และ เงื่อนไขในการใช้งาน
+                            </label>
+                        </div>
+                    </div>
+                    <!-- End of password box -->
+
+                    <div id="button_container">
+                        <a id="regisbutton"><button type="button" onclick="register()" class="btn-float-right">ลงทะเบียน</button></a>
+                    </div>
+                </form>
+
+                <div class="haveacc">มีบัญชีอยู่แล้ว?<a class="goto_login" href="login.html">ล็อกอิน</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <img src="media/regispic.PNG">
+        </div>
+    </div>
+    <!-- End of main content -->
+
+</body>
+
+</html>
