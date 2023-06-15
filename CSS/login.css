@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Signika', sans-serif;
+}
+
+
+/* Split the screen in half */
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/* Control the left side */
+
+.left {
+    left: 0;
+    width: 55%;
+}
+
+
+/* Control the right side */
+
+.right {
+    right: 0;
+    width: 45%;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+
+.centered {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form_container {
+    font-family: 'Kanit';
+    margin: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.top_container_name {
+    margin-left: 4px;
+}
+
+#form_header_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt_box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt_login {
+    align-items: center;
+    background-color: white;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 50px;
+    display: flex;
+    height: 20px;
+    max-width: 500px;
+    padding: 15px 30px;
+    margin-right: 20px;
+}
+
+.login_choice1 {
+    align-items: center;
+    display: flex;
+    height: 20px;
+    padding: 15px 10px;
+    margin-right: 35px;
+    text-decoration: none;
+}
+
+.login_choice2 {
+    align-items: center;
+    display: flex;
+    height: 20px;
+    padding: 15px 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.line2 {
+    border-left: 1px solid black;
+    height: 50px;
+    margin-left: -8px;
+    top: 0;
+}
+
+.flogo {
+    width: 25px;
+    height: 25px;
+    align-items: flex-start;
+    padding-left: 5px;
+}
+
+.alt_txt {
+    padding-left: 15px;
+}
+
+.or-1 {
+    position: relative;
+    align-items: center;
+    height: 1px;
+    width: 50%;
+    min-width: 500px;
+    margin: 36px 0;
+    margin-left: -25px;
+    background-color: #d4d4d4;
+}
+
+.or-1::before {
+    content: 'หรือ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+#form_header {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 18px;
+    min-height: 54px;
+    min-width: 208px;
+    white-space: nowrap;
+}
+
+.top_container_box {
+    border: 1px solid;
+    border-color: black;
+    background-color: white;
+    border-radius: 50px;
+    height: 20px;
+    min-width: 200px;
+    max-width: 500px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.main_form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_content_container {
+    align-items: flex-start;
+    padding: 5px;
+    max-width: 550px;
+}
+
+.texthead {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+input {
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+    font-family: 'Kanit';
+}
+
+input:focus {
+    outline: none;
+}
+
+.terms {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.haveacc {
+    margin-left: -320px;
+    padding-top: 10px;
+}
+
+#button_container {
+    height: 20px;
+    max-width: 500px;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+#regisbutton {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-float-right {
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: #1CA299;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    min-width: 300px;
+    width: 530px;
+    font-family: 'Kanit';
+    margin-top: -30px;
+    margin-left: -25px;
+}
+
+.btn-float-right:hover {
+    background-color: #127782
+}
+
+.btn-float-right:active {
+    background-color: #127782;
+    transform: translateY(2px);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2em auto;
+    gap: 0.5em;
+}
+
+.goto_login {
+    color: #2cc3c3;
+    padding-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}

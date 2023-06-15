@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Signika:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<script src=""></script>
+
+<body>
+
+    <!-- Start of main content -->
+    <div class="split left">
+        <div class="form_container">
+            <div id="form_header_container">
+                <h1 id="form_header"> ลงชื่อเข้าใช้ </h1>
+            </div>
+
+            <div class="main_form">
+                <form action="#">
+
+                    <!-- Start of email box -->
+                    <div class="form_content_container">
+                        <div class="top_container_name">
+                            <span class="texthead">อีเมล์</span>
+                            <span>&nbsp;</span>
+                            <span class="red">*</span>
+                        </div>
+
+                        <div class="top_container_box">
+                            <input type="email" id="email" placeholder="กรุณาพิมพ์อีเมล์ของคุณ">
+                        </div>
+                    </div>
+                    <!-- End of email box -->
+
+                    <!-- Start of password box -->
+                    <div class="form_content_container">
+                        <div class="top_container_name">
+                            <span class="texthead">รหัสผ่าน</span>
+                            <span>&nbsp;</span>
+                            <span class="red">*</span>
+                        </div>
+
+                        <div class="top_container_box">
+                            <input type="password" id="password" placeholder="กรุณาพิมพ์รหัสผ่านของคุณ">
+                        </div>
+
+                    </div>
+                    <!-- End of password box -->
+
+                    <div id="button_container">
+                        <a id="regisbutton"><button type="button" onclick="login()" class="btn-float-right">ลงชื่อเข้าใช้</button></a>
+                    </div>
+
+                    <div class="alt_box">
+
+                        <div class="or-1"></div>
+
+                        <div class="alt_login">
+                            <a class="login_choice1" href="">
+                                <img src="media/floog.png" class="flogo">
+                                <div class="alt_txt">ล็อกอินด้วยfacebook</div>
+                            </a>
+                            <div class="line2"></div>
+                            <a class="login_choice2" href="">
+                                <img src="media/google.png" class="flogo">
+                                <div class="alt_txt">ล็อกอินด้วยบัญชีgoogle</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="haveacc">ยังไม่มีบัญชี?<a class="goto_login" href="register.html">สร้างบัญชีของคุณ</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <img src="media/regispic.PNG">
+        </div>
+    </div>
+    <!-- End of main content -->
+
+</body>
+
+</html>
