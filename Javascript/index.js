@@ -19,9 +19,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebase = require("firebase");
-const admin = require("firebase-admin");
-
 admin.initializeApp(functions.config().firebase);
 firebase.initializeApp(functions.config().firebase);
 
