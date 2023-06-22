@@ -19,9 +19,16 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+const firebase = require("firebase");
+const admin = require("firebase-admin");
+
+admin.initializeApp(functions.config().firebase);
+firebase.initializeApp(functions.config().firebase);
+
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+// Get the Auth service for the default app
 const auth = firebase.auth()
 const database = firebase.database()
 
