@@ -19,12 +19,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(config);
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 // Get the Auth service for the default app
-const auth = firebase.auth()
+const auth = getAuth(app);
 const database = firebase.database()
 
 //Set up register function
