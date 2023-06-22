@@ -19,7 +19,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-admin.initializeApp(functions.config().firebase);
 firebase.initializeApp(functions.config().firebase);
 
 const app = initializeApp(firebaseConfig);
