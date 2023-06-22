@@ -1,5 +1,5 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
 import { getAuth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js";
 
@@ -19,11 +19,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-var firebase = require("firebase/app");
-require("firebase/auth");
-
-firebase.initializeApp(functions.config().firebase);
-
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
