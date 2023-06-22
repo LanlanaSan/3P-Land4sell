@@ -19,6 +19,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+const functions = require('firebase-functions');
+
 firebase.initializeApp(functions.config().firebase);
 
 const app = initializeApp(firebaseConfig);
