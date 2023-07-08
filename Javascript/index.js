@@ -38,21 +38,6 @@ window.register = function(e) {
         password: password.value,
     }
 
-    //Call function to validate the input fields
-    if (validate_email(email) == false) {
-        alert('กรุณากรอกที่อยู่อีเมล์ที่ถูกต้อง')
-        return
-    }
-    if (validate_field(full_name) == false) {
-        alert('กรุณากรอกชื่อและนามสกุล')
-        return
-    }
-
-    if (validate_password(password) == false) {
-        alert('กรุณากรอกรหัสผ่านอย่างน้อย 6 ตัว')
-        return
-    }
-
     createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function(success) {
             alert("สร้างบัญชีผู้ใช้สำเร็จ!")
@@ -108,33 +93,4 @@ function register() {
 
             alert(error_message)
         })
-}
-
-function validate_email(email) {
-    expression = /^[^@]+@\w+(\.\w+)+\w$/
-    if (expression.test(email) == true) {
-        // Email is correct format
-        return true
-    } else {
-        return false
-    }
-}
-
-function validate_password(password) {
-    if (password < 6) {
-        return false
-    } else {
-        true
-    }
-}
-
-function validate_field(field) {
-    if (field == null) {
-        return false
-    }
-    if (field.length <= 0) {
-        return false
-    } else {
-        return true
-    }
 }
