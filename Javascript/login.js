@@ -36,7 +36,7 @@ window.login = function(e) {
 
     signInWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function(success) {
-            console.log(user.uid)
+            //console.log(user.uid)
             window.location.replace("../after-login.html")
             alert("ล็อกอินเข้าใช้สำเร็จ!")
         })
