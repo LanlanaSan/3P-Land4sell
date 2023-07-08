@@ -21,13 +21,30 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-// Get the Auth service for the default app
 const auth = getAuth(app);
 const database = getDatabase(app);
 
-const btnRG = document.querySelector('.btn-regis');
+//Getting all the objects from html
+var full_name = document.getElementById('full_name')
+var email = document.getElementById('email')
+var password = document.getElementById('password')
+
+window.register = function(e) {
+    e.preventDefault();
+    var obj = {
+        full_name: full_name.value,
+        email: email.value,
+        password: password.value,
+    }
+    createUserWithEmailAndPassword(auth, obj.email, obj.password)
+        .then(function(success) {
+            alert("Signup Successfully!")
+        })
+        .catch(function(err) {
+            alert("error" + err)
+        })
+    console.log(obj)
+};
 
 //Set up register function
 function register() {
@@ -70,8 +87,6 @@ function register() {
             alert(error_message)
         })
 }
-
-btnRG.addEventListener('click', register);
 
 function validate_email(email) {
     expression = /^[^@]+@\w+(\.\w+)+\w$/
