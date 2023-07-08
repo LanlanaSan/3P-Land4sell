@@ -37,12 +37,33 @@ window.register = function(e) {
         email: email.value,
         password: password.value,
     }
+
+    //Call function to validate the input fields
+    if (validate_email(email) == false) {
+        alert('กรุณากรอกที่อยู่อีเมล์ที่ถูกต้อง')
+        return
+    }
+    if (validate_field(full_name) == false) {
+        alert('กรุณากรอกชื่อและนามสกุล')
+        return
+    }
+
+    if (validate_password(password) == false) {
+        alert('กรุณากรอกรหัสผ่านอย่างน้อย 6 ตัว')
+        return
+    }
+
     createUserWithEmailAndPassword(auth, obj.email, obj.password)
         .then(function(success) {
-            alert("Signup Successfully!")
+            alert("สร้างบัญชีผู้ใช้สำเร็จ!")
         })
         .catch(function(err) {
-            alert("error" + err)
+            //If any error happens in auth process
+            var error_code = err.code
+            var error_message = err.message
+
+            alert(error_code + " :" + error_message)
+                //alert("error" + err)
         })
     console.log(obj)
 };
