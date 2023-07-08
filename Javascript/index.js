@@ -27,6 +27,8 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const database = getDatabase(app);
 
+const btnRG = document.querySelector('.btn-regis');
+
 //Set up register function
 function register() {
     full_name = document.getElementById('full_name').value
@@ -68,6 +70,8 @@ function register() {
             alert(error_message)
         })
 }
+
+btnRG.addEventListener('click', register);
 
 function validate_email(email) {
     expression = /^[^@]+@\w+(\.\w+)+\w$/
