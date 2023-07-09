@@ -57,7 +57,7 @@ window.login = function(e) {
 }
 
 //function to login with Facebook
-document.getElementsByClassName("login_choice1").addEventListener("click", function() {
+document.getElementById("facebook-login").addEventListener("click", function() {
     signInWithPopup(auth, fb_provider)
         .then((result) => {
             // The signed-in user info.
@@ -84,4 +84,3 @@ document.getElementsByClassName("login_choice1").addEventListener("click", funct
 })
 
 //function to login with Google
-//document.getElementsByClassName()
