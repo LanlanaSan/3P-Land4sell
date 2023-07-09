@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
-import { getAuth, signInWithEmailAndPassword, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, FacebookAuthProvider, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,10 +22,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth = getAuth();
+const auth = getAuth(app);
 
-const provider = new FacebookAuthProvider();
-console.log(provider);
+const fb_provider = new FacebookAuthProvider(app);
+const google_provider = new GoogleAuthProvider(app);
+console.log(fb_provider);
 
 var email = document.getElementById('email');
 var password = document.getElementById('password');
@@ -57,7 +58,7 @@ window.login = function(e) {
 
 //function to login with Facebook
 document.getElementById("facebook-login").addEventListener("click", function() {
-    signInWithPopup(auth, provider)
+    signInWithPopup(auth, fb_provider)
         .then((result) => {
             // The signed-in user info.
             const user = result.user;
