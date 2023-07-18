@@ -132,10 +132,10 @@ li a:active {
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .rectangle-1-3 {
-        width: 400px;
-        height: 400px;
         background-color: orange;
-        color: black;
+    }
+    footer {
+        width: max-content;
     }
 }
 
@@ -144,10 +144,10 @@ li a:active {
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
     .rectangle-1-3 {
-        width: 200px;
-        height: 200px;
         background-color: red;
-        color: #fff;
+    }
+    footer {
+        width: max-content;
     }
 }
 
@@ -156,10 +156,10 @@ li a:active {
 
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
     .rectangle-1-3 {
-        width: 400px;
-        height: 200px;
         background-color: cyan;
-        color: black;
+    }
+    footer {
+        width: max-content;
     }
 }
 
@@ -168,9 +168,9 @@ li a:active {
 
 @media screen and (max-device-width: 640px) {
     .rectangle-1-3 {
-        width: 400px;
-        height: 200px;
         background-color: chartreuse;
-        color: black;
+    }
+    footer {
+        width: max-content;
     }
 }
