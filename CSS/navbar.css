@@ -138,7 +138,7 @@ li a:active {
         width: 100px;
         height: 45px;
         padding-left: 15px;
-        padding-top: 5px;
+        padding-top: -5px;
     }
 }
 
