@@ -1,18 +1,35 @@
 section {
     float: left;
     margin: 0 3%;
-    width: 56%;
-    background-color: #323637;
+    width: 50%;
     padding-bottom: 200px;
 }
 
 aside {
     float: right;
-    margin-right: 180px;
+    margin-right: 300px;
     width: 28%;
-    background-color: aqua;
 }
 
 .maincontent {
     padding-top: 120px;
+}
+
+#thmap {
+    width: 540px;
+    height: auto;
+    padding-left: 250px;
+    padding-top: 50px;
+}
+
+#hinttxt1 {
+    font-family: 'Kanit';
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#hinttxt2 {
+    font-family: 'Kanit';
+    font-size: 25px;
 }
