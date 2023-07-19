@@ -1,0 +1,127 @@
+.maincontent {
+    padding-top: 110px;
+}
+
+.sec1 {
+    height: 200px;
+    padding-left: 250px;
+    padding-top: 50px;
+}
+
+#blacktxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 black;
+    color: black;
+    font-size: 32px;
+}
+
+#tealtxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 #1CA299;
+    color: #1CA299;
+    font-size: 32px;
+}
+
+#regtxt {
+    font-family: "Kanit";
+    color: black;
+    font-size: 26px;
+}
+
+.sec2 {
+    background-color: #D9D9D9;
+    height: 300px;
+    padding-left: 250px;
+    padding-top: 30px;
+}
+
+.container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-row .a-text {
+    flex: 1;
+}
+
+.container-row .a-image {
+    flex: 2;
+}
+
+.a-text {
+    margin-top: -30px;
+}
+
+.a-image {
+    margin-top: -30px;
+}
+
+#handimg {
+    height: 330px;
+}
+
+.sec3 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.desktop1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.desktop1-container1 {
+    flex: 0 0 auto;
+    width: 448px;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.desktop1-container2 {
+    top: 40px;
+    right: -300px;
+    width: 450px;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #FBF8F1;
+}
+
+.desktop1-container3 {
+    right: -300px;
+    width: 450px;
+    bottom: -708px;
+    height: 320px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    background-color: #F7ECDE;
+}
+
+.desktop1-container4 {
+    top: 40px;
+    right: 90px;
+    width: 465px;
+    height: 667px;
+    display: flex;
+    margin-left: 340px;
+    margin-top: 40px;
+    align-items: flex-start;
+    background-color: #E9DAC1;
+}

@@ -1,0 +1,64 @@
+.maincontent {
+    padding-top: 110px;
+    padding-left: 250px;
+}
+
+.sec1 {
+    padding-top: 50px;
+}
+
+#blacktxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 black;
+    color: black;
+    font-size: 32px;
+}
+
+#tealtxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 #1CA299;
+    color: #1CA299;
+    font-size: 32px;
+}
+
+.regtxt {
+    font-family: "Kanit";
+    color: black;
+    font-size: 26px;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.img2 {
+    width: 750px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img3 {
+    width: 700px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.img4 {
+    width: 800px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

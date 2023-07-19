@@ -1,0 +1,80 @@
+.maincontent {
+    padding-top: 110px;
+    padding-left: 250px;
+}
+
+.sec1 {
+    padding-top: 50px;
+}
+
+#blacktxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 black;
+    color: black;
+    font-size: 32px;
+}
+
+#tealtxt {
+    font-family: "Kanit";
+    font-weight: 600;
+    text-shadow: 1px 0 #1CA299;
+    color: #1CA299;
+    font-size: 32px;
+}
+
+#redtxt {
+    font-family: "Kanit";
+    color: red;
+    font-size: 26px;
+}
+
+.regtxt {
+    font-family: "Kanit";
+    color: black;
+    font-size: 26px;
+}
+
+.step1 {
+    height: 550px;
+}
+
+.step2 {
+    padding-top: 30px;
+    height: 600px;
+}
+
+.step3 {
+    padding-top: 30px;
+}
+
+.step4 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.img2 {
+    width: 700px;
+    height: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img3 {
+    width: 700px;
+    height: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
