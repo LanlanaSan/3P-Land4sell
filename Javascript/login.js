@@ -27,6 +27,7 @@ const auth = getAuth(app);
 const fb_provider = new FacebookAuthProvider(app);
 const google_provider = new GoogleAuthProvider(app);
 console.log(fb_provider);
+console.log(google_provider);
 
 var email = document.getElementById('email');
 var password = document.getElementById('password');
@@ -81,7 +82,7 @@ document.getElementById("facebook-login").addEventListener("click", function() {
             // The AuthCredential type that was used.
             const credential = FacebookAuthProvider.credentialFromError(err);
         })
-});
+})
 
 //function to login with Google
 document.getElementById("google-login").addEventListener("click", function() {
@@ -97,13 +98,14 @@ document.getElementById("google-login").addEventListener("click", function() {
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.log(errorMessage);
         // The email of the user's account used.
         const email = error.customData.email;
         // The AuthCredential type that was used.
         const credential = GoogleAuthProvider.credentialFromError(error);
 
     })
-});
+})
 
 //function to signout
 /* signOut(auth).then(() => {
