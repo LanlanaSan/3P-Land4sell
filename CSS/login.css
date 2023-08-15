@@ -70,37 +70,53 @@ body {
 
 .alt_login {
     align-items: center;
-    background-color: white;
-    border: 1px solid;
-    border-color: black;
-    border-radius: 50px;
     display: flex;
-    height: 20px;
+    height: 30px;
     max-width: 500px;
-    padding: 15px 30px;
     margin-right: 20px;
 }
 
 .login_choice1 {
     align-items: center;
+    text-align: center;
+    padding-left: 20px;
     display: flex;
-    height: 20px;
-    padding: 15px 10px;
-    margin-right: 35px;
-    text-decoration: none;
+    height: 45px;
+    width: 250px;
+    margin-right: 30px;
+    background: #3b5998;
+    color: white;
+    border-radius: 30px;
+    border: 0px transparent;
+    font-family: Kanit;
+    font-size: 14px;
+}
+
+.login_choice1:hover {
+    filter: brightness(80%);
 }
 
 .login_choice2 {
     align-items: center;
+    text-align: center;
+    padding-left: 15px;
     display: flex;
-    height: 20px;
-    padding: 15px 10px;
+    height: 45px;
+    width: 250px;
     margin-left: 20px;
-    text-decoration: none;
+    background: #d1cbcb;
+    border-radius: 30px;
+    border: 0px transparent;
+    font-family: Kanit;
+    font-size: 14px;
+}
+
+.login_choice2:hover {
+    filter: brightness(80%);
 }
 
 .line2 {
-    border-left: 1px solid black;
+    border-left: 1px solid white;
     height: 50px;
     margin-left: -8px;
     top: 0;
@@ -141,6 +157,7 @@ body {
 
 #form_header {
     letter-spacing: 0;
+    padding-left: 50px;
     line-height: normal;
     margin-right: 18px;
     min-height: 54px;
@@ -200,7 +217,7 @@ input:focus {
 
 .haveacc {
     margin-left: -320px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 #button_container {

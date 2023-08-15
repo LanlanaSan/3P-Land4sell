@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
-import { getAuth, signInWithEmailAndPassword, FacebookAuthProvider, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, FacebookAuthProvider, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
 import { getDatabase } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -85,7 +85,24 @@ document.getElementById("facebook-login").addEventListener("click", function() {
 })
 
 //function to login with Google
-document.getElementById("google-login").addEventListener("click", function() {
+const googleSignInButton = document.getElementById("google-login");
+
+const googleuserSignIn = async() => {
+    signInWithPopup(auth, google_provider).then((result) => {
+        const user = result.user;
+        console.log(user);
+        window.location.replace("../after-login.html")
+        alert("ล็อกอินเข้าใช้สำเร็จ!")
+    }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode + ":" + errorMessage);
+    })
+}
+
+googleSignInButton.addEventListener('click', googleuserSignIn);
+
+/* document.getElementById("google-login").addEventListener("click", function() {
     signInWithPopup(auth, google_provider).then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
         const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -105,7 +122,7 @@ document.getElementById("google-login").addEventListener("click", function() {
         const credential = GoogleAuthProvider.credentialFromError(error);
 
     })
-})
+}) */
 
 //function to signout
 /* signOut(auth).then(() => {
