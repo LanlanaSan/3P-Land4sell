@@ -85,7 +85,7 @@ document.getElementById("facebook-login").addEventListener("click", function() {
 })
 
 //function to login with Google
-const googleSignInButton = document.getElementById("google-login");
+/* const googleSignInButton = document.getElementById("google-login");
 
 const googleuserSignIn = async() => {
     signInWithPopup(auth, google_provider).then((result) => {
@@ -100,16 +100,18 @@ const googleuserSignIn = async() => {
     })
 }
 
-googleSignInButton.addEventListener('click', googleuserSignIn);
+googleSignInButton.addEventListener('click', googleuserSignIn); */
 
-/* document.getElementById("google-login").addEventListener("click", function() {
+document.getElementById("google-login").addEventListener("click", function() {
     signInWithPopup(auth, google_provider).then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         // The signed-in user info.
         const user = result.user;
-        // IdP data available using getAdditionalUserInfo(result)
+        window.location.replace("../after-login.html")
+        alert("ล็อกอินเข้าใช้สำเร็จ!")
+            // IdP data available using getAdditionalUserInfo(result)
 
     }).catch((error) => {
         // Handle Errors here.
@@ -122,7 +124,7 @@ googleSignInButton.addEventListener('click', googleuserSignIn);
         const credential = GoogleAuthProvider.credentialFromError(error);
 
     })
-}) */
+})
 
 //function to signout
 /* signOut(auth).then(() => {
